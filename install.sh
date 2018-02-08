@@ -50,7 +50,7 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 echo "--------------Download .vimrc File---------------"
 echo "---------------下载.vimrc配置文件-----------------"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-curl -LSso ~/.vimrc https://github.com/mp4102/VimSimpleIDE/vimrc
+curl -LSso ~/.vimrc https://raw.githubusercontent.com/mp4102/VimSimpleIDE/master/vimrc
 
 echo "--------------Install vim Plugins----------------"
 echo "--------------------安装插件----------------------"
