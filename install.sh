@@ -2,26 +2,24 @@
 
 #=======================================
 #Environment:Ubuntu_16.04_64
-
-#Author:mp4102
-#Create_Version:1.0
-#Creation_Date:2018.02.08
-#Program Ref:wenlizhang
-
-#Update:mp4102
-#Current_Version:1.1
-#Update_Date:2018.02.09
+#File:install.sh
+#Description:VimSimpleIDE One key installation script. 一键安装脚本
+#Author:NoodleZen <noodlezen@sina.com>
+#Created:2018.02.08
+#Maintainer:NoodleZen <noodlezen@sina.com>
+#Version:1.1.1
+#Modified:2018.02.09
 #=======================================
 
 #记录开始时间
 start_time=`date +'%Y-%m-%d %H:%M:%S'`
 
 echo "--------------Install VimSimpleIDE---------------"
-echo "-----安装VimSimpleIDE 轻量级Python集成开发环境-----"
-echo "-------------------Version:1.0-------------------"
+echo "----安装VimSimpleIDE 轻量级Python集成开发环境----"
+echo "-----------------Version:1.1.1-------------------"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 echo "------------Install Supporting Tools-------------"
-echo "-------------------安装支持工具-------------------"
+echo "------------------安装支持工具-------------------"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 sudo apt-get install -y vim ctags xclip astyle python-setuptools python-pip python-dev build-essential git curl
 #if which apt-get >/dev/null; then
@@ -50,7 +48,7 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 echo "--------------Download .vimrc File---------------"
 echo "---------------下载.vimrc配置文件-----------------"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-curl -LSso ~/.vimrc https://raw.githubusercontent.com/mp4102/VimSimpleIDE/master/vimrc
+curl -LSso ~/.vimrc https://raw.githubusercontent.com/noodlezen/VimSimpleIDE/master/vimrc
 
 echo "--------------Install vim Plugins----------------"
 echo "--------------------安装插件----------------------"
@@ -86,6 +84,6 @@ start_seconds=$(date --date="$start_time" +%s);
 end_seconds=$(date --date="$end_time" +%s);
 
 echo "---------------------Done!-----------------------"
-echo "--------------------安装完毕----------------------"
+echo "-------------------安装完毕----------------------"
 echo "本次安装花费时间："$((end_seconds-start_seconds))"s"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"

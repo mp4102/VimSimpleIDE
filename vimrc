@@ -1,14 +1,12 @@
 "=======================================
 "Environment:Ubuntu_16.04_64
-
-"Author:mp4102
-"Create_Version:1.0
-"Creation_Date:2018.02.08
-"Program Ref:wenlizhang
-
-"Update:mp4102
-"Current_Version:1.1
-"Update_Date:2018.02.09
+"File:vimrc
+"Description:VimSimpleIDE configuration file. VimSimpleIDE配置文件
+"Author:NoodleZen <noodlezen@sina.com>
+"Created:2018.02.08
+"Maintainer:NoodleZen <noodlezen@sina.com>
+"Version:1.1.1
+"Modified:2018.02.09
 "=======================================
 
 
